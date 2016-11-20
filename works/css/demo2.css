@@ -1,0 +1,25 @@
+div.menu div.title{
+	width:329px;
+	height:36px;
+	line-height:36px;
+	text-align:center;
+	border-bottom:3px solid red;
+}
+*{
+	margin:0px;
+	padding:0px;
+}
+div.menu div.items {
+	width:329px;
+	height:120px;
+	
+}
+div.menu div.items a.img {
+	text-align:center;
+	display:block;
+	vertical-align:middle;
+	color:#999;
+}
+div.menu div.items a.img span.shop{
+	
+}

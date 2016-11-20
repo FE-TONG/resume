@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>游戏案列-石头剪刀布</title>
+  <link rel="stylesheet" href="css/caiquan.css" />
+ </head>
+ <body>
+	<div id="game">
+		<ul>
+			<li><p class="name">我：name</p>
+				<div class="anim user"></div>
+				<div class="score">积分:0</div>
+			</li>
+			<li><p class="name">电脑：name</p>
+				<div class="anim comp"></div>
+				<div class="score">积分:0</div>
+			</li>
+		</ul>
+		<div class="op">
+			<button class="but" id="but" onclick="game.play();">开始</button>
+		</div>
+		<ul class="guess" id="guess">
+			<li>
+				<div class="guess0" onclick="game.verdict(0)">石头</div>
+			</li>
+			<li>
+				<div class="guess1" onclick="game.verdict(1)">剪刀</div>
+			</li>
+			<li>
+				<div class="guess2"  onclick="game.verdict(2)">布</div>
+			</li>
+		</ul>
+		<div class="text">请开始游戏...</div>
+		<button id ="reset">重置</button>
+	</div>
+	<script type="text/javascript" src="js/caiquan.js"></script>
+ </body>
+</html>

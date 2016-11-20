@@ -1,0 +1,454 @@
+/* star*/
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,
+legend,button,input,textarea,th,td{
+    margin:0;
+    padding:0
+}
+html,body{
+    width:100%;
+    height:100%;
+    font-family:"Microsoft YaHei",'Helvetica Neue',Helvetica,Arial,sans-serif;
+    color:#000;     
+}
+ul{list-style:none;}
+a{text-decoration:none;}
+.clear{clear: both;}
+.fl{float: left;}
+.fr{float: right;}
+*{box-sizing: border-box;}
+.container{
+    
+    margin: 0 auto;
+    width: 1020px;
+    padding: 20px 40px;
+    
+}
+/* end*/
+
+/* nav start */
+.nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999; 
+    width: 100%;
+    padding-left: 20px; 
+    padding-right: 20px;    
+    color: #fff;
+    background-color: #333333;  
+}
+.navbar-col{
+    float: right;
+    
+}
+.navbar-header{
+    float: left;
+    padding: 15px;
+}
+.nav .navbar-col li{
+    float: left;
+    padding: 15px;
+    cursor: pointer;
+}
+.nav .navbar-col a{
+    font-size: 16px;
+    color: #fff;
+}
+.nav .navbar-col li:hover a{
+    color: #a3d3d1;
+}
+/* nav end */
+.self{
+        float: right;
+        text-align: center;
+        margin: 0;
+    }
+
+.self h1{
+    font-size: 4rem;
+    line-height: 1;
+}
+.self h2{
+    padding: 5px 6px;
+    font-weight: 400;
+    margin: 0;
+     font-size: 1.5rem;
+}
+.overview .item{
+    border-left: none;
+}
+h2 {
+    font-size: 2rem;
+}
+h3 {
+    font-size: 1.5rem;
+}
+.item p {
+    margin-bottom: 0.8rem;
+    line-height: 1.6rem;
+}
+.item ul li{
+    list-style: disc;
+    line-height: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+h1, h2, h3, h4 {
+    font-weight: 400;
+    line-height: 1.25;
+    margin: 1.5rem 0 0.25rem;
+}
+.category {
+    position: relative;
+    margin-top: 3rem;
+}
+.category-title {
+    max-width: 150px;
+    font-weight: 700;
+}
+.experience .category-title {
+    color: #264e59;
+}
+.experience .item {
+    border-color: #264e59;
+}
+.education .item {
+    border-color: #500e4e;
+}
+.education .category-title{
+    color: #500e4e;
+}
+.education .target-border,.education .target-dot {
+    background: #500e4e;
+}
+.community .category-title {
+    color: #21b080;
+}
+.community .item {
+    border-color: #21b080;
+}
+.community .target-border,.community .target-dot  {
+    background: #21b080;
+}
+.skill .item {
+    border-color: #c93c67;
+}
+.skill .target-border,.skill .target-dot  {
+    background: #c93c67;
+}
+.skill .category-title{
+    color:#c93c67;
+}
+.contact .category-title{
+    color: #abcdef;
+}
+.item:nth-child(2) {
+    margin-top: 30px;
+}
+.item {
+    border-left: 5px solid;
+    padding-left: 50px;
+    padding-bottom: 2rem;
+    position: relative;
+}
+.experience .target-border {
+    background: #264e59;
+}
+.target-border {
+    position: absolute;
+    left: -38px;
+    top: -15px;
+    width: 70px;
+    height: 70px;
+    border: 15px solid white;
+    border-radius: 50%;
+    z-index: 1;
+}
+.experience .target-dot {
+    background: #264e59;
+}
+.target-dot {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    z-index: 10;
+    margin: 5px auto;
+    border: 10px solid white;
+}
+.item-company-title {
+    display: inline-block;
+    margin-top: 0;
+}
+.item-personal-title {
+    margin-left: 0 !important;
+    margin-bottom: 0.2em !important;
+    display: block;
+}
+.item-personal-title {
+    margin-left: 15px;
+    color: #888888;
+}
+
+.item-date {
+    position: relative;
+    right: auto;
+    top: auto;
+    text-align: left;
+    margin-bottom: 0.2em;
+}
+.item-date {
+    position: absolute;
+    right: 980px;
+    top: 6px;
+    text-align: right;
+    min-width: 180px;
+    color: #888888;
+    font-size: 0.8em;
+}
+.item-key-tech {
+    color: #888888;
+    font-size: 0.8em;
+}
+.item-personal-details {
+    margin-top: 0;
+    padding-left: 1em;
+}
+
+.tel{
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+.item a{
+    color: teal;
+}
+
+/* CSS3 圆形 */
+.round{
+    width: 160px;
+    height: 160px;
+    margin: 20px;
+    position: relative;
+}
+.display {
+    position: absolute;
+    width: 160px;
+    z-index: 20;
+    color: #333;
+    font-size: 3rem;
+    text-align: center;
+    top: 55px;
+    left: 0;
+   
+}
+.front{
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+
+}
+.right{
+    right:0;
+}
+.left{
+    left:0;
+}
+.rotate{
+    position: absolute;
+    top:0;
+    width: 80px;
+    height: 160px;
+    overflow: hidden;
+}
+.circle{
+    position: absolute;
+    top:0;
+    width: 160px;
+    height: 160px;
+    border: 10px solid #fff;
+    border-radius: 50%;
+    transform: rotate(45deg);
+}
+.rightcircle{
+    border-top:10px solid ;
+    border-right:10px solid ;
+    right:0; 
+}
+.leftcircle{
+    border-bottom:10px solid ;
+    border-left:10px solid ;
+    left:0;  
+}
+/* 95deg 387   85 351  90 369  */
+.skill1 .front{
+    color: #1abc9c;
+}
+
+.skill1 .leftcircle{
+    border-bottom-color: #1abc9c;
+    border-left-color: #1abc9c;
+    transform: rotate(387deg);   /*先自转一圈 45+360 即满角.  x/360 = 95/100  x=342 360-342=18 45+360-18*/
+}
+.skill1 .rightcircle{
+    border-top-color: #1abc9c;
+    border-right-color: #1abc9c;
+}
+.skill2 .leftcircle{
+    border-bottom-color: #2ecc70;
+    border-left-color: #2ecc70;
+    transform: rotate(333deg);
+}
+.skill2 .rightcircle{
+    border-top-color: #2ecc70;
+    border-right-color: #2ecc70;
+}
+.skill3 .leftcircle{
+    border-bottom-color: #e74c3c;
+    border-left-color: #e74c3c;
+    transform: rotate(333deg);
+}
+.skill3 .rightcircle{
+    border-top-color: #e74c3c;
+    border-right-color: #e74c3c;
+}
+.skill4 .leftcircle{
+    border-bottom-color: #3498dc;
+    border-left-color: #3498dc;
+    transform: rotate(333deg);
+}
+.skill4 .rightcircle{
+    border-top-color: #3498dc;
+    border-right-color: #3498dc;
+}
+.skill5 .leftcircle{
+    border-bottom-color: red;
+    border-left-color: red;
+    transform: rotate(333deg);
+}
+.skill5 .rightcircle{
+    border-top-color: red;
+    border-right-color: red;
+}
+.sss{
+    width:100%;
+    height:500px;   
+    overflow:hidden;
+}
+.title{
+    width: 150px;
+    margin: 0 auto;
+    font-size: 32px;
+    font-weight: bold;
+    padding-top:100px;
+}
+.content{
+    padding-top:100px;
+    padding-left:300px;
+}
+.overview .item{
+    overflow: hidden;
+}
+.ov-p{
+    float: left;
+    width: 600px;
+}
+/*end contact*/
+@media screen and (min-width:640px) and (max-width:980px){
+
+}
+@media (max-width: 1080px){
+    .container{
+        width: 780px;
+    } 
+    .ov-p{
+        float: left;
+        width: 400px;
+    }
+    .item-personal-title {
+        margin-left: 0 !important;
+        margin-bottom: 0.2em !important;
+        display: block;
+    }
+    .item-date {
+        position: relative;
+        right: auto;
+        top: auto;
+        text-align: left;
+        margin-bottom: 0.2em;
+    }
+}
+@media (min-width: 767px){
+    .navbar-header ul {
+        display: none;
+    }
+
+}
+@media (max-width: 768px){
+    .self{
+        float: none;
+        text-align: center;
+    }
+    .ov-p{
+        float: none;
+        width: 100%;
+    }
+    .container{
+        width: 100%;
+    } 
+    .target-border {
+        display: none;
+    }
+    .item {
+        border: none;
+        padding-left: 0;
+    }
+    .navbar-header .line{
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin-right: 20px;
+        margin-top: 22px;
+        display: block;
+        cursor: pointer;;
+    }
+    .navbar-header .line li {
+        background-color: white;
+        height: 2px;
+        margin-bottom: 4px;
+        padding: 0;
+        width: 20px;
+    }
+    .navbar-col{
+        float: none;
+        display: block; 
+    }
+    .navbar-col ul{
+        position: absolute;
+        top: 51px;
+        left: 0;
+        z-index: 100001;
+        overflow: hidden;
+        width: 100%;
+        height: 0;
+        white-space: nowrap;
+        background-color: #333;
+        text-align: center;
+        transition: height 1500ms;
+        -moz-transition: height 1500ms; /* Firefox 4 */
+        -webkit-transition: height 1500ms;  /* Safari ºÍ Chrome */
+        -o-transition: height 1500ms;   /* Opera */
+    }
+    .nav .collapse ul{
+        height: 220px;
+    }
+    .nav .navbar-col ul li{
+        float: none;
+    }
+    .nav .navbar-col ul a{
+        color: #fff;
+    }
+}

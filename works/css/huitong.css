@@ -1,0 +1,449 @@
+/*公共样式开始*/
+html{
+	color: #666;
+	font-family: "宋体";
+	font-size: 12px;
+	background: #FFF;
+}
+body,div, dl, dt, dd, ul, ol, li,img, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td{ 
+	margin: 0; 
+	padding: 0; 
+}
+img{border:0px;}
+ul,ol{
+	list-style:none;
+}
+em,b{
+	font-weight:normal;
+	font-style:normal;
+}
+a{text-decoration:none;}
+.clear{clear:both}
+.fl{float:left;}
+.fr{float:right;}
+/*公共样式结束*/
+.project,.top,.main,.nav,.banner,.ending{
+	width:100%;
+	margin-left:auto;
+	margin-right:auto;
+}
+.center{
+	width:1040px;
+	margin-left:auto;
+	margin-right:auto;
+	position:relative;
+}
+.top{
+	height:83px; /*123-40*/
+	background:rgb(242,242,242);
+}
+.top .text {
+	width:300px;
+	padding-left:28px;
+	padding-top:25px;
+	color:rgb(121,40,46)
+}
+.top .h1{
+	width:92px;
+	height:123px;
+	font-size:20px;
+	font-weight:900;
+}
+.top h1{
+	font-size:20px;
+	font-weight:900;
+}
+.top .text span{
+	font-size:11px;
+	font-family:'Microsoft Yahei';
+	font-weight:normal;
+}
+.login{
+	padding-top:10px;
+}
+.login div{
+	margin-bottom:18px;
+	text-align:right
+}
+.login a{
+	color:rgb(147,146,146);
+	font-size:12px;
+}
+.login span{
+	padding-top:18px;
+	font-family:'Microsoft Yahei';
+	font-size:20px;
+	color:rgb(125,41,43)
+}
+/*top end*/
+/*nav star*/
+.nav{
+	background:rgb(121,40,46);
+	height:40px;
+}
+.nav ul.title li{	
+	float:left;
+	position:relative;
+}
+.nav ul.title .hover{
+	background:rgb(77,25,29);
+}
+.nav .title li a{
+	font-family:'Microsoft Yahei';
+	color:#fff;
+	font-size: 14px;
+	padding:10px 27px;
+	display:inline-block;
+}
+.nav .title li.spen a{
+	width:86px;
+	height:40px;
+	padding:0px;
+	line-height:40px;
+	text-align:center;
+}
+.nav-subnav{
+	width:86px;
+	overflow:hidden;
+	position:absolute;
+	top:40px;
+	left:0px;
+	display:none;
+	background:rgb(112,69,73);
+	z-index:1000;
+}
+.nav .title .nav-subnav ul li{
+	width:100%;
+}
+.nav .title .nav-subnav ul li a{
+	width:100%;
+	font-size: 12px;
+}
+.nav .nav-subnav ul li a:hover{
+	background:rgb(94,48,51);
+}
+/*banner star*/
+.banner{
+	height:409px;
+	position:relative;
+}
+.banner-img {
+	width:100%;
+	height:409px;
+	overflow:hidden;
+	position:relative;
+}
+.banner-img .banner-ul li{
+	display:none;
+}
+.banner-img li img{
+	width:1440px;
+	height:409px;
+	position:relative;
+	left:50%;
+	margin-left:-720px;/*这个数值是图片宽度的一半*/
+}
+.banner-img li .on img{
+	display:block;
+}
+.banner .ban-hen1 {
+	position:absolute;
+	bottom:0px;
+	height:33px;
+	width:100%;
+	background:rgba(127,127,127,0.6);	
+}
+.banner .ban-hen1 #ban-nav{
+	float:right;
+}
+.banner .ban-hen1 #ban-nav li{
+	float:left;
+}
+.banner .ban-hen1 #ban-nav li a{
+	display:inline-block;
+	width:16px;
+	height:16px;
+	margin: 8px 3px;
+	border-radius:50%;
+	background:#fff;
+	line-height:33px;
+}
+.banner .ban-hen1 #ban-nav li.on a{
+	border:3px solid rgb(77,25,29);
+	margin:5px 0px;
+	line-height:33px;
+}
+
+/*abouts news star*/
+.main{
+	height:333px;
+	background:url('../images/bj1.png') no-repeat;
+}
+.main .center{
+	padding-top:25px;
+}
+.about{
+	color:#5f2024;
+}
+.about em{
+	font-family:'Arial';
+	font-size:18px;
+	color:rgb(77,25,29)
+}
+.about em b{
+	padding-left:11px;
+	font-family:'Microsoft Yahei';
+	font-size:12px;
+	color:rgb(95,32,36);
+}
+.con{
+	padding-top:28px;
+	width:300px;
+	color:#79282e;
+}
+.con img{
+	width:135px;
+	height:123px;
+	padding-right:16px;
+}
+.con .text{
+	padding-left:3px;
+	width:298px;
+	font-size:12px;
+	font-family:'Microsoft Yahei';
+	text-indent:14px;
+	line-height:31px;
+	display:block;
+	text-overflow:clip;
+}
+.con .text a{
+	color:rgb(73,135,137)
+}
+.news{
+	width:350px;
+	padding-left:80px;
+}
+.news .con1{
+	padding-top:28px;
+}
+.news .con1{
+	width:350px;
+	height:181px;
+	overflow:hidden;
+}
+.news .btm{
+	width:100%;
+	height:30px;
+	background:rgb(121,40,46);
+}
+.news .btm h3{
+	width:200px;
+	float:left;
+	color:#fff;
+	font-family:'Microsoft Yahei';
+	font-size:12px;
+	line-height:30px;
+}
+.news .btm .con2{
+	
+	float:right;
+}
+.news .btm .con2 li{
+	float:left;
+	text-align:center;
+	margin-top:7px;
+	margin-right:7px;
+	color:#fff;
+	width:17px;
+	height:17px;
+	border-radius:50%;
+	background:rgb(77,25,29)
+}
+.news .btm .con2 li.on{
+	color:rgb(121,40,46);
+	background:#fff;
+}
+.contact{
+	width:225px;
+}
+.contact .con3{
+	padding-top:20px;
+}
+.contact .con3 span{
+	color:rgb(121,40,86);
+	font-family:'Microsoft Yahei';
+	font-size:12px;
+	display:block;
+	line-height:32px;
+}
+.contact .con3 img{
+	margin-top:8px;
+}
+/*project star*/
+.project{
+	padding-top:30px;
+	font-family:'Microsoft Yahei';
+	font-size:14px;
+	background:rgb(249,249,249);
+	height:338px;
+}
+.project .calcul{
+	width:338px;
+	float:left;
+}
+.project .ul{
+	width:334px;
+	padding-bottom:5px;
+	padding-left:4px;
+	border-bottom:1px solid rgb(199,199,199);
+}
+.project .ul li{
+	display:inline-block;	
+	padding:5px 10px;
+	color:rgb(121,40,46);
+	border:1px solid transparent;
+	cursor:pointer;
+}
+.project .ul li.curr{
+	background:rgb(121,40,46);
+	color:#fff;
+	border:1px solid #ddd;
+	border-radius:5px;
+}
+.calucl-content{
+	width:330px;
+	border-top:1px solid #fff;
+	padding-left:8px;
+}
+.content-licai{
+	padding-top:18px;
+	position:relative;
+	height:137px;
+	border-bottom:1px dashed rgb(214,214,214); 
+}
+.content-licai input{
+	width:209px;
+	height:33px;
+	text-indent:20px;
+	border:1px solid rgb(218,218,218);
+}
+.content-licai .yuan{
+	margin-left:10px;
+}
+.content-licai .input-border{
+	width:58px;
+	height:33px;
+	text-align:center;
+	line-height:33px;
+	display:block;
+	position:absolute;
+	left:226px;
+	top:1px;
+	background:rgb(231,231,231);
+}
+.licai-money{
+	margin-bottom:11px;
+	position:relative;
+}
+.content-licai .licai-text{
+	color:#5f2024;
+	font-size:12px;
+	padding-top:10px;
+}
+.calcul button{
+	cursor:pointer;
+	border:none;
+	color:#fff;
+	font-size:14px;
+	padding:10px 34px;
+	margin:20px auto 0px;
+	display:block;
+	background:rgb(36,118,121);
+}
+.presentation{
+	float:left;
+	margin-left:46px;
+	width:656px;
+}
+.presentation-text{
+	padding-bottom: 14px;
+	border-bottom: 1px solid #C7C7C7;
+}
+.presentation-text span{
+	font-family:'Arial';
+	font-size:18px;
+	color:#4d191d;
+}
+.presentation-text span b{
+	font-family:'Microsoft Yahei';
+	font-size:12px;
+}
+.presentation-text button{
+	width:53px;
+	height:20px;
+	margin-right:8px;
+	font-size:10px;
+	font-family:'Arial';
+	cursor:pointer;
+	border:none;
+	color:#fff;
+	background:rgb(36,118,121);
+	float:right;
+}
+.presentation-content{
+	width:651px;
+	margin-left:4px;
+	border-top:1px solid #fff;
+}
+.presentation-content ul{
+	padding-top:8px;
+}
+.presentation-content ul li{
+	height:33px;
+	border-bottom:1px dashed rgb(214,214,214); 
+	line-height:33px;
+}
+.presentation-content em{
+	width:7px;
+	height:9px;
+	display:inline-block;
+	margin-right:8px;
+	background:url('../images/ico.png') no-repeat;
+}
+.presentation-content ul li a{
+	font-size:12px;
+	color:#696969;
+}
+.presentation-content ul li b{
+	float:right;
+	margin-right:6px;
+}
+/*ending star*/
+.ending{
+	height:66px;
+	background:rgb(77,25,29);
+	padding-top:16px;
+	color:#b7b7b7;
+}
+.ending .img{
+	width:50px;
+	height:50px;
+	padding-right:15px;
+	display:block;
+}
+.ending .copyright{
+	width:470px;
+	height:50px;
+	line-height:25px;
+}
+.ending ul li{
+	float:left;
+	margin-right:7px;
+}
+.ending ul li a{
+	color:#b7b7b7;
+}
+.support{
+	line-height:25px;
+	width:110px;
+}

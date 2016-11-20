@@ -1,0 +1,128 @@
+*{
+	padding:0px;
+	margin:0px;
+}
+html,body{
+	width:100%;
+	height:100%;
+	font-size:28px;
+	background-color:rgba(244, 184, 202, 1);
+}
+ul{
+	list-style:none;
+}
+#game{
+	width:800px;
+	height:600px;
+	margin:auto;
+	text-align:center;
+	position:relative;
+}
+#game ul{
+	width:100%;
+	height:415px;
+}
+#game ul li{
+	width:50%;
+	height:375px;
+	float:left;
+}
+#game ul li div.anim{
+	width:223px;
+	height:337px;
+	margin:auto;
+	margin-top:20px;
+	border:10px solid #ff6699;
+	border-radius:50%;
+	background-position:center;
+	background-repeat:no-repeat;
+}
+div.user{
+	background-image:url('../images/readyl.png');
+}
+div.comp{
+	background-image:url('../images/readyr.png');
+}
+div.guess0{
+	background-image:url(../images/0.png);
+}
+
+div.guess1{
+	background-image:url(../images/1.png);
+}
+div.guess2{
+	background-image:url(../images/2.png);
+}
+#game .op{
+	width:100%;
+	text-align:center;
+}
+#game .op button{
+	width:200px;
+	height:60px;
+	font-size:30px;
+	border:10px solid #ff6699;
+	border-radius:50%;
+    outline:none;       
+	cursor:pointer; 
+}
+#game .op button:hover{
+	background-color:red;
+	border-color:red;
+	color:#fff;
+}
+#game .op button.disabled{
+	border-color:#bbb;
+	color:#bbb;
+	background-color:#ccc;
+	font-size:35px;
+	cursor:default;
+}
+
+#game ul.guess{
+	width:220px;
+	height:100%;
+	position:fixed;
+	top:0px;
+	left:0px;
+	display:none;
+}
+#game ul.guess li{
+	width:100%;
+	height:30%;
+}
+#game ul.guess li div{
+	width:100%;
+	height:90%;
+	border:10px solid #ff6699;
+	border-radius:50%;
+	background-position:center;
+	background-repeat:no-repeat;
+	cursor:pointer; 
+}
+#game ul.guess li div:hover{
+	background-color:#ff6699;
+	color:#fff;
+}
+#game .text{
+	width:100%;
+	text-align:center;
+	margin-top:50px;
+	font-size:50px;
+}
+#reset{
+	position:absolute;
+	top:250px;
+	left:380px;
+	width:50px;
+	height:50px;
+	border:2px solid red;
+	border-radius:50%;
+	color:red;
+	background-color:red;
+	outline:none;       
+	cursor:pointer; 
+}
+#reset:hover{
+	color:#fff;
+}
