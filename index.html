@@ -74,17 +74,12 @@
 	            	<h3 class="item-company-title">深圳金飞捷有限公司</h3>
 	            	<span class="item-personal-title">前端开发人员</span>
 	          	</div>
-	          	<div class="item-date">2015年3月 - 2016年10月</div>
+	          	<div class="item-date">2015年3月 - 2016年11月</div>
 	          	<p class="item-key-tech">
 	            	<a href="http://www.jinfeijie.com" target="_blank">金飞捷商城</a>
 	          	</p>
 	          	<ul class="item-personal-details">
-	            	<li>根据文档需求及用户要求进行合理的布局(div+css)</li>
-	            	<li>调用js库和jquery库实现各种Dom操作
-	            	</li>
-	            	<li>ajax后台获取json,jsonp数据进行解析，并在页面展示</li>
-	            	<li>后台页面使用bootstrap进行布局.</li>
-	            	<li>在代码审查执行质量标准,以尽早发现错误,并鼓励重构,减少代码冗余.</li>
+	            	
 	          	</ul>
 	        </div>
 	         <div class="item">
@@ -95,7 +90,7 @@
 	            	<h3 class="item-company-title">深圳电信工程有限公司</h3>
 	            	<span class="item-personal-title">监控助理</span>
 	          	</div>
-	          	<div class="item-date">2014年10月 - 2015年02月</div>
+	          	<div class="item-date">2014年09月 - 2015年02月</div>
 	          	<p class="item-key-tech">
 	            	数据监控
 	          	</p>
@@ -115,17 +110,34 @@
 	            <div class="target-dot"></div>
 	          </div>
 	          <div class="titles">
-	            <h3 class="item-company-title"><a target="_blank" href="works/index.html">仿腾讯课堂首页</a></h3>
-	            <span class="item-personal-title">独立完成</span>
+	            <h3 class="item-company-title"><a target="_blank" href="works/index.html">金飞捷商城</a></h3>
+	            <span class="item-personal-title">6人团队</span>
 	          </div>
-	          <div class="item-date">一个星期</div>
+	          <div class="item-date">2015年11月-2016年07月</div>
 	          <ul class="item-personal-details">
-	          	<li>该页面是使用html+css,jq进行dom操作;</li>
-	            <li></li>
-	            <li></li>
-	            
+	          	<li>使用 mui框架+HTML5混合开发出的Web app，优化页面逻辑，简化代码</li>
+	            <li>ajax后台获取json,jsonp数据进行解析，并在页面展示</li>
+	            <li>利用zepto、jQuery等为页面添加功能，提高网站的交互效果</li>
+	            <li>使用 Bootstrap进行后台页面的开发</li>
 	          </ul>
 	        </div>
+            <div class="item">
+              <div class="target-border">
+                <div class="target-dot"></div>
+              </div>
+              <div class="titles">
+                <h3 class="item-company-title">
+                    <a target="_blank" href="works/huitong.html">外卖HTML模板</a>
+                </h3>
+                <span class="item-personal-title">两人团队</span>
+              </div>
+              <div class="item-date"></div>
+              <ul class="item-personal-details">
+                <li>使用 div+css、媒体查询以及弹性盒子实现响应式布局。</li>
+                <li>使用 zepto库为页面添加功能，提高网站的交互效果。</li>
+                <li>使用 APICloud的开发平台进行底层的调用手机核心功能接口（包括地理定位，声音和振动等）</li>
+              </ul>
+            </div>
 	        <div class="item">
 	          <div class="target-border">
 	            <div class="target-dot"></div>
@@ -140,21 +152,7 @@
 	           	
 	          </ul>
 	        </div>
-	        <div class="item">
-	          <div class="target-border">
-	            <div class="target-dot"></div>
-	          </div>
-	          <div class="titles">
-	            <h3 class="item-company-title">
-	            	<a target="_blank" href="works/huitong.html">兼容IE6的企业页面</a>
-	            </h3>
-	            <span class="item-personal-title">独立完成</span>
-	          </div>
-	          <div class="item-date">两天</div>
-	          <ul class="item-personal-details">
-	            <li></li>
-	          </ul>
-	        </div>
+	        
         </section>	
         <section class="category skill">	
         	<h2 class="category-title">技能</h2>
@@ -285,7 +283,59 @@
 		});
 		$(".navbar-col a").click(function(){
 
-		})
+		});
+        var arr1 = ["张大哥","曾啊牛","啊锚","啊够","啊散步","吴哥"];
+        var arr2 = ["我是数组2","不知道说什么","真的","啊够"];
+        var arr = [];
+        arr = arr1.concat(arr2);
+        arr.splice(1,1);
+        console.log(arr);
+
+        //字符串出现的次数;
+        var str = "hello,word;xxxxjj";
+        function strCount(str){
+            var obj = {};
+            for(var i=0;i<str.length;i++){
+                if(obj[str.charAt(i)]){
+                    obj[str.charAt(i)]++;
+                }else{
+                    obj[str.charAt(i)] = 1;
+                }
+            }
+            console.log(obj);
+            var num = 0;
+            var k="";
+            for(var i in obj){
+                if(obj[i]>num){
+                    num = obj[i];
+                    k=i;
+                }
+            };
+            console.log("出现次数最多的字符"+k+",次数是"+num)
+        }
+        strCount(str);
+
+        //去重复数组
+        var xx1 = [1,2,3,4,5];
+        var xx2 = [2,123,321,4,"3"];
+        function xxx(arr1,arr2){
+            var arr = arr1.concat(arr2);
+            arr.sort();
+            var p = [arr[0]];
+            for(var i=0;i<arr.length;i++){
+                if(arr[i] !== p[p.length-1]){
+                    p.push(arr[i])
+                }
+            }
+            return p;
+        }
+
+        //排序
+        var arr = [2,3,1,322,34,32,32,12,324,23,4];
+        function sort(arr){
+            
+        }
+        console.log(xxx(xx1,xx2))
 	</script>
  </body>
 </html>
